@@ -1,0 +1,13 @@
+SECRETS/
+
+.vscode/
+
+.idea/
+
+__pycache__/
+
+cred.txt
+
+env/
+foo.py
+*.json
