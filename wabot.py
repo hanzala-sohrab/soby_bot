@@ -9,7 +9,7 @@ from time import time
 from datetime import datetime
 from gspread.exceptions import CellNotFound
 
-gc = gspread.service_account(filename="service_account.json")
+gc = gspread.service_account()
 sh = gc.open_by_url(foo.URL)
 worksheet_list = sh.worksheets()
 worksheet1 = worksheet_list[0]
