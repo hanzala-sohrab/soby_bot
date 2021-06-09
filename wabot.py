@@ -241,12 +241,12 @@ class WABot():
                                 keyword += m[i]
                                 i += 1
                             _time = message['time']
-                            self.produc_of_interest_flow(id, keyword)
-                            while int(time()) < _time + 60:
-                                pass
-                            self.typing(id)
-                            return self.send_message(
-                                id, "آپ کا ضلعی کونسا ہے سڑجی؟\nWhat is your District Area Sir?")
+                            return self.produc_of_interest_flow(id, keyword)
+                            # while int(time()) < _time + 60:
+                            #     pass
+                            # self.typing(id)
+                            # return self.send_message(
+                            #     id, "آپ کا ضلعی کونسا ہے سڑجی؟\nWhat is your District Area Sir?")
                         elif "fb.me" in message["body"]:
                             self.typing(id)
                             m = message['body']
@@ -256,12 +256,12 @@ class WABot():
                                 keyword += m[i]
                                 i += 1
                             _time = message['time']
-                            self.produc_of_interest_flow(id, keyword)
-                            while int(time()) < _time + 60:
-                                pass
-                            self.typing(id)
-                            return self.send_message(
-                                id, "آپ کا ضلعی کونسا ہے سڑجی؟\nWhat is your District Area Sir?")
+                            return self.produc_of_interest_flow(id, keyword)
+                            # while int(time()) < _time + 60:
+                            #     pass
+                            # self.typing(id)
+                            # return self.send_message(
+                            #     id, "آپ کا ضلعی کونسا ہے سڑجی؟\nWhat is your District Area Sir?")
                         elif "choose your product" in prevMessage:
                             try:
                                 poi = int(message['body'])
